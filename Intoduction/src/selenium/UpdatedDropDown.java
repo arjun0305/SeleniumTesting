@@ -15,12 +15,12 @@ public class UpdatedDropDown {
 		
 //		Set From city	
 		System.out.println("Enter from City code");
-		String fromCity =sc.next();
+		String fromCity =sc.next().toUpperCase();
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).sendKeys(fromCity);
 		
 //		Set to City
 		System.out.println("Enter to City code");
-		String toCity = sc.next();
+		String toCity = sc.next().toUpperCase();
 		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='"+toCity+"']")).click();
 		
 		System.out.println("How many adults you want to add" );
